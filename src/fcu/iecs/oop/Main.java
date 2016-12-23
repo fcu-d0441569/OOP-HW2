@@ -1,0 +1,20 @@
+package fcu.iecs.oop;
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int i, count;
+		Scanner scan = new Scanner(System.in);
+		NissanTiida tii = new NissanTiida();
+		System.out.print("How many times do you want to call tiida: ");
+		count = scan.nextInt();
+		for(i = 0; i < count; i++){
+			System.out.println("Tiida!!!");
+			tii.tiida();
+		}
+	}
+
+}
